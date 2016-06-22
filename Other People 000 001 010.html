@@ -3227,7 +3227,7 @@ $(document).ready(function clickOn(){
 			$('#aX').append('<p class="perdita">Perdita: Okay, go ahead with your turn.</p>');
 			document.getElementById("image-perdita").src="http://alexhwang.net/wp-content/uploads/2016/06/Sprite-Perdita-HappyT.png"
 			document.getElementById("image-ophelia").src="http://alexhwang.net/wp-content/uploads/2016/06/Sprite-Ophelia-Neutral1.png"
-			value++;
+			value = 34;
 			$('#textbox').get(0).scrollTop = $('#textbox').get(0).scrollHeight;
 		}
 		
@@ -3296,7 +3296,7 @@ $(document).ready(function clickOn(){
 		else if (value == 449) {
 			document.getElementById("image-perdita").src="http://alexhwang.net/wp-content/uploads/2016/06/Sprite-Perdita-Glance1.png"
 			document.getElementById("image-ophelia").src="http://alexhwang.net/wp-content/uploads/2016/06/Sprite-Ophelia-Glance1.png"
-			value++;
+			value = 283;
 			$('#textbox').get(0).scrollTop = $('#textbox').get(0).scrollHeight;
 		}
 		
@@ -3387,7 +3387,7 @@ $(document).ready(function clickOn(){
 		else if (value == 464) {
 			document.getElementById("image-perdita").src="http://alexhwang.net/wp-content/uploads/2016/06/Sprite-Perdita-Glance1.png"
 			document.getElementById("image-ophelia").src="http://alexhwang.net/wp-content/uploads/2016/06/Sprite-Ophelia-Glance1.png"
-			value++;
+			value = 68;
 			$('#textbox').get(0).scrollTop = $('#textbox').get(0).scrollHeight;
 		}
 		
@@ -3487,7 +3487,7 @@ $(document).ready(function clickOn(){
 			$('#aX').append('<p class="perdita">Perdita: Your turn.</p>');
 			document.getElementById("image-perdita").src="http://alexhwang.net/wp-content/uploads/2016/06/Sprite-Perdita-HappyT.png"
 			document.getElementById("image-ophelia").src="http://alexhwang.net/wp-content/uploads/2016/06/Sprite-Ophelia-Neutral1.png"
-			value++;
+			value = 320;
 			$('#textbox').get(0).scrollTop = $('#textbox').get(0).scrollHeight;
 		}
 		
@@ -3556,7 +3556,7 @@ $(document).ready(function clickOn(){
 		else if (value == 492) {
 			document.getElementById("image-perdita").src="http://alexhwang.net/wp-content/uploads/2016/06/Sprite-Perdita-Glance1.png"
 			document.getElementById("image-ophelia").src="http://alexhwang.net/wp-content/uploads/2016/06/Sprite-Ophelia-Glance1.png"
-			value++;
+			value = 283;
 			$('#textbox').get(0).scrollTop = $('#textbox').get(0).scrollHeight;
 		}
 		
@@ -3647,7 +3647,7 @@ $(document).ready(function clickOn(){
 		else if (value == 507) {
 			document.getElementById("image-perdita").src="http://alexhwang.net/wp-content/uploads/2016/06/Sprite-Perdita-Glance1.png"
 			document.getElementById("image-ophelia").src="http://alexhwang.net/wp-content/uploads/2016/06/Sprite-Ophelia-Glance1.png"
-			value++;
+			value = 68;
 			$('#textbox').get(0).scrollTop = $('#textbox').get(0).scrollHeight;
 		}
 		
@@ -3818,6 +3818,41 @@ $(document).ready(function clickOn(){
 			document.getElementById("image-ophelia").src="http://alexhwang.net/wp-content/uploads/2016/06/Sprite-Ophelia-Glance1.png"
 			value++;
 			$('#textbox').get(0).scrollTop = $('#textbox').get(0).scrollHeight;
+		}
+		else if (value == 534) {
+			//Buttons 29 30 31
+			$('#m').append('<div id="m1"><button class="ophelia" onclick="clickM1()">How did you die?</button></div><div id="m2"><button class="ophelia" onclick="clickM2()">Have you met anyone else here?</button></div><div id="m3"><button class="ophelia" onclick="clickM3()">Is something wrong with your legs?</button></div>');
+			document.getElementById("image-perdita").src="http://alexhwang.net/wp-content/uploads/2016/06/Sprite-Perdita-Down1.png"
+			document.getElementById("image-ophelia").src="http://alexhwang.net/wp-content/uploads/2016/06/Sprite-Ophelia-Glance1.png"
+			value++;
+			$('#textbox').get(0).scrollTop = $('#textbox').get(0).scrollHeight;
+		$(document).ready(function clickM1(){
+			$("#m1").click(function clickM1(){
+				$("#m").remove();
+				document.getElementById("image-perdita").src="http://alexhwang.net/wp-content/uploads/2016/06/Sprite-Perdita-Glance1.png"
+				document.getElementById("image-ophelia").src="http://alexhwang.net/wp-content/uploads/2016/06/Sprite-Ophelia-NeutralT.png"
+				$("#aX").append('<p class="ophelia">Ophelia: How did you die?</p>');
+				value = 536;
+			});
+		});
+		$(document).ready(function clickM2(){
+			$("#m2").click(function clickM2(){
+				$("#m").remove();
+				document.getElementById("image-perdita").src="http://alexhwang.net/wp-content/uploads/2016/06/Sprite-Perdita-Glance1.png"
+				document.getElementById("image-ophelia").src="http://alexhwang.net/wp-content/uploads/2016/06/Sprite-Ophelia-NeutralT.png"
+				$("#aX").append('<p class="ophelia">Ophelia: Have you met anyone else here?</p>');
+				value = 568;
+			});
+		});
+		$(document).ready(function clickM3(){
+			$("#m3").click(function clickM3(){
+				$("#m").remove();
+				document.getElementById("image-perdita").src="http://alexhwang.net/wp-content/uploads/2016/06/Sprite-Perdita-Glance1.png"
+				document.getElementById("image-ophelia").src="http://alexhwang.net/wp-content/uploads/2016/06/Sprite-Ophelia-NeutralT.png"
+				$("#aX").append('<p class="ophelia">Ophelia: Is something wrong with your legs?</p>');
+				value = 580;
+			});
+		});
 		}
 		
 		//29
@@ -4025,7 +4060,7 @@ $(document).ready(function clickOn(){
 			$('#aX').append('<p class="perdita">Perdita: Okay, go ahead with your turn.</p>');
 			document.getElementById("image-perdita").src="http://alexhwang.net/wp-content/uploads/2016/06/Sprite-Perdita-HappyT.png"
 			document.getElementById("image-ophelia").src="http://alexhwang.net/wp-content/uploads/2016/06/Sprite-Ophelia-Neutral1.png"
-			value++;
+			value = 135;
 			$('#textbox').get(0).scrollTop = $('#textbox').get(0).scrollHeight;
 		}
 		
@@ -4094,7 +4129,7 @@ $(document).ready(function clickOn(){
 		else if (value == 577) {
 			document.getElementById("image-perdita").src="http://alexhwang.net/wp-content/uploads/2016/06/Sprite-Perdita-Glance1.png"
 			document.getElementById("image-ophelia").src="http://alexhwang.net/wp-content/uploads/2016/06/Sprite-Ophelia-Glance1.png"
-			value++;
+			value = 283;
 			$('#textbox').get(0).scrollTop = $('#textbox').get(0).scrollHeight;
 		}
 		
@@ -4178,7 +4213,7 @@ $(document).ready(function clickOn(){
 		else if (value == 561) {
 			document.getElementById("image-perdita").src="http://alexhwang.net/wp-content/uploads/2016/06/Sprite-Perdita-Glance1.png"
 			document.getElementById("image-ophelia").src="http://alexhwang.net/wp-content/uploads/2016/06/Sprite-Ophelia-Glance1.png"
-			value++;
+			value = 320;
 			$('#textbox').get(0).scrollTop = $('#textbox').get(0).scrollHeight;
 		}
 		
@@ -4526,7 +4561,7 @@ $(document).ready(function clickOn(){
 			$('#aX').append('<p class="perdita">Perdita: Okay, go ahead with your turn.</p>');
 			document.getElementById("image-perdita").src="http://alexhwang.net/wp-content/uploads/2016/06/Sprite-Perdita-HappyT.png"
 			document.getElementById("image-ophelia").src="http://alexhwang.net/wp-content/uploads/2016/06/Sprite-Ophelia-Neutral1.png"
-			value++;
+			value = 135;
 			$('#textbox').get(0).scrollTop = $('#textbox').get(0).scrollHeight;
 		}
 		
@@ -4595,7 +4630,7 @@ $(document).ready(function clickOn(){
 		else if (value == 627) {
 			document.getElementById("image-perdita").src="http://alexhwang.net/wp-content/uploads/2016/06/Sprite-Perdita-Glance1.png"
 			document.getElementById("image-ophelia").src="http://alexhwang.net/wp-content/uploads/2016/06/Sprite-Ophelia-Glance1.png"
-			value++;
+			value = 283;
 			$('#textbox').get(0).scrollTop = $('#textbox').get(0).scrollHeight;
 		}
 		
@@ -4679,7 +4714,7 @@ $(document).ready(function clickOn(){
 		else if (value == 641) {
 			document.getElementById("image-perdita").src="http://alexhwang.net/wp-content/uploads/2016/06/Sprite-Perdita-Glance1.png"
 			document.getElementById("image-ophelia").src="http://alexhwang.net/wp-content/uploads/2016/06/Sprite-Ophelia-Glance1.png"
-			value++;
+			value = 346;
 			$('#textbox').get(0).scrollTop = $('#textbox').get(0).scrollHeight;
 		}
 		
@@ -5961,6 +5996,11 @@ $(document).ready(function clickOn(){
 <div id="l"> <!--39 40-->
 <!--<div id="l1"><button class="ophelia" onclick="clickL1()">Have you met anyone else here?</button></div>
 <div id="l2"><button class="ophelia" onclick="clickL2()">So why did you ask me to help you up?</button></div>-->
+</div>
+<div id="m"> <!--29 30 31-->
+<!--<div id="m1"><button class="ophelia" onclick="clickM1()">How did you die?</button></div>
+<div id="m2"><button class="ophelia" onclick="clickM2()">Have you met anyone else here?</button></div>
+<div id="m3"><button class="ophelia" onclick="clickM3()">Is something wrong with your legs?</button></div>-->
 </div>
 
 </div>
